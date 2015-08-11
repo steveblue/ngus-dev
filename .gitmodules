@@ -1,0 +1,6 @@
+[submodule "ngus-dev"]
+	path = ngus-dev
+	url = https://github.com/steveblue/ngus.git
+[submodule "ngus"]
+	path = ngus
+	url = https://github.com/steveblue/ngus.git
