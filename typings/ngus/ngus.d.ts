@@ -2,7 +2,7 @@
 // Project: http://ngus.io
 // Definitions by: Steve Belovarich
 
-declare module "ngus/ngus" {
+declare module "ngus/dist/system/ngus" {
 
     export class $famous {
         static instance: $famous;
@@ -43,6 +43,15 @@ declare module "ngus/ngus" {
         setOpacity(o: any): void;
         onInit(): void;
         onChange(change: any): void;
+    }
+
+    export class FaCamera {
+        id: String;
+        camera: any;
+        depth: Number;
+        constructor(parent: FaNode);
+        onInit(): void;
+        onChange(changes: any): void;
     }
 
     export class FaDomElement {
