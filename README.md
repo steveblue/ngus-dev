@@ -26,7 +26,29 @@ npm install -g live-server
 
 In the project directory, use the `live-server` command.
 
+### Dev it out.
 
-### Listen for changes
+Run the following commands in the root directory.
 
-To watch for changes to typescript and compile on every save, run `tsc --watch` in the project directory.
+```
+live-server
+tsc --watch
+cd /ngus
+gulp dev
+
+```
+
+### Commit changes
+
+To make a bug fix or feature, checkout a new branch in the `ngus` submodule.
+
+```
+git checkout -b feature/new
+git checkout -b bug/new
+git checkout -b hotfix/new
+
+```
+
+### Make a pull request
+
+Make a pull request to merge your changes into the `develop` branch of the `ngus` repo.
