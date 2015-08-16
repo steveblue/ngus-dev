@@ -54,6 +54,18 @@ declare module "ngus/dist/system/ngus" {
         onChange(changes: any): void;
     }
 
+    export class FaGestureHandler {
+        id: String;
+        gestures: any;
+        tap: Function;
+        pinch: Function;
+        rotate: Function;
+        drag: Function;
+        constructor(parent: FaNode);
+        onInit(): void;
+        onChange(changes: any): void;
+    }
+
     export class FaDomElement {
         id: String;
         classes: Array<String>[];
